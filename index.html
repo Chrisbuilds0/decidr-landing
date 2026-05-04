@@ -41,10 +41,10 @@
     <div class="hero-inner">
       <div class="hero-copy">
         <div class="brand-pill"><span class="logo-mark large" aria-hidden="true"></span><strong>Brand TBD<small>final name and logo coming later</small></strong></div>
-        <h1>Stop scrolling.<br><span>Start eating.</span></h1>
-        <p class="hero-text">Your taste, restrictions, budget, and mood turned into 3 real order-ready picks. Best Match, Fast & Reliable, and Wildcard, then tap through to order.</p>
+        <h1>Know what to eat.<br><span>Then order it.</span></h1>
+        <p class="hero-text">Your taste, restrictions, budget, and mood turned into 3 order-ready picks. No overthinking, no endless browsing, no “what do I even want?” spiral.</p>
         <div class="hero-actions"><button class="btn btn-primary" onclick="document.getElementById('beta').scrollIntoView({behavior:'smooth'})">Join the beta</button><button class="btn btn-ghost" onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})">See how it works</button></div>
-        <div class="hero-proof"><span class="proof-chip">No endless menus</span><span class="proof-chip">Hard restrictions respected</span><span class="proof-chip">Checkout stays on your delivery app</span></div>
+        <div class="hero-proof"><span class="proof-chip">No endless thinking</span><span class="proof-chip">Hard restrictions respected</span><span class="proof-chip">Checkout stays on your delivery app</span></div>
       </div>
       <div class="hero-card" aria-label="Product preview">
         <div class="phone">
@@ -65,14 +65,14 @@
 
   <section class="fade-in">
     <div class="section-inner pain-grid">
-      <div class="pain-main"><p><strong>Food apps are built to show you everything.</strong> This is built to end the scroll. You should not need 30 minutes, 12 open tabs, and three “what do you want?” texts to order dinner.</p></div>
+      <div class="pain-main"><p><strong>Food decisions get messy before the app even opens.</strong> This is built to turn “I don’t know what I want” into a confident next meal. You should not need 30 minutes, 12 open tabs, and three “what do you want?” texts to order dinner.</p></div>
       <div class="pain-side"><div class="stat"><b>3 picks</b><span>Enough choice to feel in control. Not enough to spiral.</span></div><div class="stat"><b>1 tap</b><span>Open your preferred ordering app when the pick feels right.</span></div></div>
     </div>
   </section>
 
   <section class="how fade-in" id="how">
     <div class="section-inner center">
-      <p class="eyebrow">How it works</p><h2>From hungry to ordered without the decision spiral.</h2><p class="section-lead">The product learns what matters once, then helps at the exact moment you would normally start scrolling.</p>
+      <p class="eyebrow">How it works</p><h2>From hungry to decided without the food spiral.</h2><p class="section-lead">Tell it what matters once, then use it whenever hunger turns into indecision.</p>
       <div class="steps">
         <div class="step-card"><div class="step-num">1</div><h3>Tell it once</h3><p>Add hard rules like allergies, vegan, halal, gluten-free, disliked foods, budget, distance, and the kinds of meals you usually trust.</p></div>
         <div class="step-card"><div class="step-num">2</div><h3>Pick the moment</h3><p>Hungry now, comfort food, healthy-ish, cheap, quick, something new, or Surprise Me. No long form. No food personality quiz.</p></div>
@@ -83,7 +83,7 @@
 
   <section class="picks fade-in">
     <div class="section-inner center">
-      <p class="eyebrow">The decision layer</p><h2>Three answers. Not another feed.</h2><p class="section-lead">The interface is designed to make a confident order easier, not recreate DoorDash with a different skin.</p>
+      <p class="eyebrow">The decision layer</p><h2>Three answers. Not another food spiral.</h2><p class="section-lead">The interface is designed to get you to a confident meal faster, whether you were stuck thinking, texting, or already browsing delivery apps.</p>
       <div class="pick-grid">
         <div class="big-pick"><span class="tag">Best Match</span><h3>The safest yes.</h3><p>The strongest overall fit for your taste, restrictions, budget, mood, and past feedback.</p></div>
         <div class="big-pick"><span class="tag">Fast & Reliable</span><h3>The practical yes.</h3><p>Good rating, reasonable price, lower regret, and likely faster when hunger is winning.</p></div>
@@ -94,7 +94,7 @@
 
   <section class="fade-in">
     <div class="section-inner center">
-      <p class="eyebrow">Trust and control</p><h2>Personalized without pretending to own the checkout.</h2><p class="section-lead">V1 is honest: recommendations happen here, ordering happens on the platform or restaurant page you already use.</p>
+      <p class="eyebrow">Trust and control</p><h2>Built around your taste, with you in control.</h2><p class="section-lead">Get a clear recommendation here, then finish the order wherever you already like to order.</p>
       <div class="trust-grid">
         <div class="trust-card"><div class="trust-icon">!</div><h4>Hard rules stay hard</h4><p>Allergies and dietary restrictions are treated conservatively. If confidence is low, the product warns or avoids.</p></div>
         <div class="trust-card"><div class="trust-icon">↗</div><h4>Deep links first</h4><p>Tap into DoorDash, Uber Eats, Grubhub, Google, or restaurant ordering pages without waiting on platform partnerships.</p></div>
@@ -106,9 +106,9 @@
 
   <section class="cta fade-in" id="beta">
     <div class="section-inner center">
-      <p class="eyebrow">Beta validation</p><h2>Help prove the end of food-app scrolling.</h2><p class="section-lead">Join the beta list. The first test is simple: do people use this when hungry, trust a pick, click toward ordering, and come back next time?</p>
+      <p class="eyebrow">Beta validation</p><h2>Be first to try a faster way to decide what to eat.</h2><p class="section-lead">Join the beta list and help shape a food decision assistant that turns hunger, cravings, restrictions, and budget into a meal you actually want.</p>
       <form class="signup-form" id="signup-form"><input type="email" id="email" placeholder="Enter your email" required><button type="submit">Join beta</button></form>
-      <p class="beta-note" id="beta-note">Placeholder brand. Real product direction.</p>
+      <p class="beta-note" id="beta-note">Placeholder brand. Real beta coming soon.</p>
     </div>
   </section>
 
@@ -119,7 +119,7 @@
   <script>
     const nav=document.getElementById('nav');let ticking=false;window.addEventListener('scroll',()=>{if(!ticking){requestAnimationFrame(()=>{nav.classList.toggle('nav-scrolled',window.scrollY>40);ticking=false});ticking=true}});
     const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.fade-in').forEach(el=>observer.observe(el));
-    document.getElementById('signup-form').addEventListener('submit',e=>{e.preventDefault();const email=document.getElementById('email').value.trim();if(!email)return;const signups=JSON.parse(localStorage.getItem('food_decision_beta_signups')||'[]');signups.push({email,timestamp:new Date().toISOString()});localStorage.setItem('food_decision_beta_signups',JSON.stringify(signups));document.getElementById('signup-form').innerHTML='<div style="width:100%;padding:1rem 1.25rem;border-radius:999px;background:rgba(255,230,0,.12);border:1px solid rgba(255,230,0,.35);color:#ffe600;font-weight:900">You are on the beta list.</div>';document.getElementById('beta-note').textContent='Saved locally for prototype validation. We can connect a real form backend next.'});
+    document.getElementById('signup-form').addEventListener('submit',e=>{e.preventDefault();const email=document.getElementById('email').value.trim();if(!email)return;const signups=JSON.parse(localStorage.getItem('food_decision_beta_signups')||'[]');signups.push({email,timestamp:new Date().toISOString()});localStorage.setItem('food_decision_beta_signups',JSON.stringify(signups));document.getElementById('signup-form').innerHTML='<div style="width:100%;padding:1rem 1.25rem;border-radius:999px;background:rgba(255,230,0,.12);border:1px solid rgba(255,230,0,.35);color:#ffe600;font-weight:900">You are on the beta list.</div>';document.getElementById('beta-note').textContent='You are on the list. We will use early feedback to make the picks sharper.'});
   </script>
 </body>
 </html>
